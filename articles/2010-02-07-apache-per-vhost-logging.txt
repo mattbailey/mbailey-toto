@@ -1,0 +1,37 @@
+--- 
+author: mbailey
+title: Apache per-vhost logging
+date: 07/02/2010
+
+I wrote this little article before; after solving a problem to get zero configuration apache vhosts with separate logs in apache.  It's a minimal configuration that is extremely fast due to apache's bulit-in perl acceleration.
+
+Fit this in with your apache config, then you can simply create directories under /web/hosts and they will automatically be your vhosts.  No restarting apache, no extra config.
+
+~
+
+	<VirtualHost IP ADDRESS> 
+	  # get the server name from the Host: header 
+	  UseCanonicalName Off
+
+	  # Farm logfiles out to small script to dump into host/logs dir 
+	  LogFormat "%V %h %l %u %t %r %s %b" vcommon 
+	  CustomLog "| /usr/local/bin/logpush.pl /web/hosts" vcommon 
+
+	  # include the server name in the filenames used to satisfy requests 
+	  VirtualDocumentRoot /web/hosts/%0/htdocs 
+	  VirtualScriptAlias /web/hosts/%0/cgi-bin 
+	</VirtualHost>
+
+And here is the logpush.pl file:
+
+	#!/usr/bin/perl 
+	use strict; 
+	while( my $line=<STDIN> ) { 
+	  my @logline = split(/ /, $line); 
+	  mkdir "/$ARGV[0]/$logline[0]/logs"; 
+	  open(LOG, ">>/$ARGV[0]/$logline[0]/logs/access_log");
+	  print LOG "$line"; close(LOG); 
+	} 
+	exit(0);
+
+

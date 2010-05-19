@@ -1,17 +1,35 @@
 <!doctype html>
-<html>
+<html xml:lang="en" lang="en">
   <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <link rel="stylesheet" type="text/css" href="/css/main.css">
+    <link rel="stylesheet" type="text/css" href="/css/disqus.css">
     <link rel="alternate" type="application/atom+xml" title="<%= title %> - feed" href="/index.xml" />
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/> 
     <title><%= title %></title>
   </head>
   <body>
+    <script type="text/javascript">
+      var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+      document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+    <script type="text/javascript">
+      try {
+        var pageTracker = _gat._getTracker("UA-12905993-1");
+        pageTracker._trackPageview();
+      } catch(err) {}
+    </script>
+    <div id="logo">
+        <a href="http://system42.net/"><img src="/images/behemoth.png" class="logo"/>
+            <p class="logo">System42.net</p></a>
+    </div>
+    <div id="nav">
+    </div>
     <section>
       <%= yield %> 
     </section>
     <footer>
-      powered by <a href="http://cloudhead.io/toto">toto</a>
+      Content &copy; 2010 - Matt Bailey &lt;mbailey@this domain&gt;
     </footer>
   </body>
 </html>

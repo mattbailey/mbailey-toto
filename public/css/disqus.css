@@ -1,0 +1,84 @@
+#dsq-content .dsq-item-trackback, .dsq-brlink, #dsq-content .dsq-comment-footer, #dsq-content .dsq-options, #dsq-content .dsq-like, #dsq-content .dsq-post-report, #dsq-content .dsq-sub-header , #dsq-content #dsq-authenticate, #dsq-content .dsq-sharing-options, #dsq-content .dsq-request-user-info table {
+	display: none;
+}
+#dsq-content .dsq-comment {
+	padding-bottom: 10;
+	padding-left: 68px;
+	position: relative;
+	border-bottom: dotted 1px #AAA;
+	font-size: 13px;
+	margin-bottom: 25px;
+}
+#dsq-content .dsq-comment-message {
+  margin: 0.5em 0 1em 0 !important;
+}
+#dsq-content .dsq-comment-footer {
+	position: absolute;
+	bottom: 0;
+	width: 90%;
+}
+#dsq-content .dsq-comment:hover .dsq-comment-footer {
+	display: block;
+}
+#dsq-content .dsq-comment-header {
+	margin-left: -68px;
+}
+#dsq-content .dsq-comment-header td {
+	background: #FFF;
+}
+#disqus_thread .dsq-comment-header-meta a {
+	display: block;
+}
+#dsq-content #dsq-comments .dsq-comment-header .dsq-comment-header-meta .dsq-comment-header-time a {
+	color: #AAA;
+	font-size: 12px;
+	padding-top: 5px;
+}
+#dsq-content #dsq-comments .dsq-comment-header .dsq-comment-header-meta .dsq-comment-header-time a:hover {
+	border-bottom-width: 0;
+	border-bottom: none;
+	border-bottom-style: none;
+}
+#disqus_thread #dsq-content #dsq-comments .dsq-comment .dsq-comment-header .dsq-header-avatar .dsq-avatar {
+	padding: 0 8px 0 0;
+}
+#disqus_thread #dsq-content #dsq-comments .dsq-comment:hover .dsq-comment-header .dsq-header-avatar .dsq-avatar {
+	border: 0;
+	background: #FFF;
+	padding: 0 8px 0 0;
+}
+#dsq-content .dsq-comment-cite span {
+	font-size: 16px;
+}
+#dsq-content #dsq-comments .dsq-comment .dsq-comment-header .dsq-header-avatar .dsq-drop-profile {
+	display: none;
+}
+#dsq-content #dsq-post-button {
+	float: left;
+	margin-left: 0;
+}
+#dsq-content #dsq-new-post .dsq-request-user-info {
+	background: #FFF;
+	margin-top: -40px;
+}
+#disqus_thread #dsq-content .dsq-thread-settings {
+	background: #F5F5F5;
+	border: none;
+	padding: 10px;
+	color: #999;
+	font-size: 12px;
+}
+.dsq-header-avatar img {
+  -webkit-box-shadow: #DDD 1px 1px 1px;
+  -moz-box-shadow: #DDD 1px 1px 1px;
+  box-shadow: #DDD 1px 1px 1px;
+}
+.comments .dsq-options, #disqus_thread h3,
+#dsq-comments-title,
+.dsq-brlink {
+  display: none !important;
+}
+.dsq-dc-logo { float: right !important; }
+#dsq-form-area { clear: both }
+.dsq-subscribe-label { font-size: 14px; line-height: 14px }
+.dqq-request-user-logout { display: none !important }

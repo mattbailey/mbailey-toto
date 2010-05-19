@@ -1,0 +1,6 @@
+--- 
+author: mbailey
+title: New little blog engine
+date: 07/02/2010
+
+Using toto now (http://github.com/cloudhead/toto). It's pretty cool, and is almost designed to run on Heroku's free service.  I have comments disabled right now (thru disqus), but it does support them; for now, I'm keeping it super simple.
