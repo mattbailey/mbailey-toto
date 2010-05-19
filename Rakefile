@@ -27,15 +27,11 @@ end
 
 desc "Publish my blog."
 task :publish do
-<<<<<<< HEAD
   toto "Publishing your article(s)..."
-
   `git add -A`
   `git commit -a -m "$(date)"`
-=======
-  toto "publishing your article(s)..."
->>>>>>> 6b9b23fff87de67ea58991dd495972fc9f02b75d
   `git push heroku master`
+  `git push github`
 end
 
 def toto msg
