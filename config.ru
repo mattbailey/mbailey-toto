@@ -16,7 +16,6 @@ toto = Toto::Server.new do
   #
   # Add your settings here
   # set [:setting], [value]
-  # 
   set :author,    "Matt Bailey"                               # blog author
   set :title,     "System42.net Blag."                   # site title
   # set :root,      "index"                                   # page to load on /
@@ -31,6 +30,3 @@ toto = Toto::Server.new do
 end
 
 run toto
-
-
-

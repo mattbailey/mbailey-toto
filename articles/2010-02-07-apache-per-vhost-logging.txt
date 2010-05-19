@@ -33,5 +33,3 @@ And here is the logpush.pl file:
 	  print LOG "$line"; close(LOG); 
 	} 
 	exit(0);
-
-

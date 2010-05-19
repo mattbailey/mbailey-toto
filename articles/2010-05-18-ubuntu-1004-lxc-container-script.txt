@@ -5,6 +5,7 @@ date: 18/05/2010
 
 This script will create a LXC container running Ubuntu Server 10.04, you should change the variables at the top for your environment. You may want to modify some of the embedded scripts to change the use of puppet.
 
+
 The script is semi-interactive.  You will have to select the base console language as well as add a user and password with sudoer access throughout the script's run.
 
 ~
@@ -216,5 +217,3 @@ The script is semi-interactive.  You will have to select the base console langua
 
     # Clean-up
 	rm -rf ${WORK}
-
-
