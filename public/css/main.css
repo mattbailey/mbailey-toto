@@ -39,6 +39,7 @@ a {
 h1 a {
   color: black;
   text-decoration: none;
+  font-family: 'IM Fell DW Pica', 'Baskerville', Georgia, Times, serif;
 }
 a:hover {
   color: #385994;
