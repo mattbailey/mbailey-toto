@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'IM Fell DW Pica';
+    font-style: normal;
+    font-weight: normal;
+    src: local('IM Fell DW Pica'), url('http://blog.system42.net/fonts/fell-pica.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'OFL Sorts Mill Goudy TT';
+    font-style: normal;
+    font-weight: normal;
+    src: local('OFL Sorts Mill Goudy TT'), url('http://blog.system42.net/fonts/goudy-tt.ttf') format('truetype');
+}

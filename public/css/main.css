@@ -1,7 +1,7 @@
 html { margin: 20px }
 body {
   margin: 0 auto;
-  font-family: 'Baskerville', Georgia, Times, serif;
+  font-family: 'OFL Sorts Mill Goudy TT', Georgia, Times, serif;
   font-size: 20px;
   line-height: 25px;
   width: 750px;
@@ -32,7 +32,7 @@ header, footer, section, article {
   float: right;
   line-height: 43px;
   margin-right: 30px;
-  font-family: 'IM Fell DW Pica', 'Baskerville', Georgia, Times, serif;
+  font-family: 'IM Fell DW Pica', 'OFL Sorts Mill Goudy TT', Georgia, Times, serif;
 }
 a {
   color: #b83000;
@@ -40,7 +40,7 @@ a {
 h1 a {
   color: black;
   text-decoration: none;
-  font-family: 'IM Fell DW Pica', 'Baskerville', Georgia, Times, serif;
+  font-family: 'IM Fell DW Pica', 'OFL Sorts Mill Goudy TT', Georgia, Times, serif;
 }
 a:hover {
   color: #385994;
@@ -122,7 +122,7 @@ body > footer {
   font-weight: bold;
   color: #b53131;
   font-size: 35pt;
-  font-family: 'IM Fell DW Pica', 'Baskerville', Georgia, Times, serif;
+  font-family: 'IM Fell DW Pica', 'OFL Sorts Mill Goudy TT', Georgia, Times, serif;
 }
 a {
   text-decoration: none;
