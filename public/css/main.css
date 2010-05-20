@@ -90,6 +90,7 @@ h1, h2, h3, h4 {
   display: inline;
   margin: 0;
   font-weight: 600;
+  font-family: 'IM Fell DW Pica', 'OFL Sorts Mill Goudy TT', Georgia, Times, serif;
 }
 ul, li {
   list-style-type: none;
